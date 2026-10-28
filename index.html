@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portafolio de María Paula: marketing digital, social media, comunicación y experiencias de marca.">
   <title>María Paula | Marketing & Social Media</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
@@ -83,14 +84,15 @@
       max-width: 520px;
     }
 
-    /* Navegación */
+    /* NAVEGACIÓN */
+
     .nav {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(250, 248, 245, .94);
+      background: rgba(250,248,245,.94);
       backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(233, 225, 221, .8);
+      border-bottom: 1px solid rgba(233,225,221,.8);
     }
 
     .nav-inner {
@@ -130,7 +132,8 @@
       padding: 9px 18px;
     }
 
-    /* Portada */
+    /* PORTADA */
+
     .hero {
       padding: 76px 0 100px;
       overflow: hidden;
@@ -165,6 +168,19 @@
       border-radius: 50%;
     }
 
+    /* Línea de áreas profesionales: más legible y alineada */
+
+    .hero-category {
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      font-size: clamp(.62rem, .88vw, .82rem);
+      line-height: 1.5;
+      letter-spacing: .105em;
+      max-width: 100%;
+      margin-bottom: 2px;
+    }
+
     .hero h1 {
       font-family: var(--serif);
       font-weight: 500;
@@ -176,13 +192,6 @@
     .hero h1 em {
       color: var(--plum);
       font-weight: 500;
-    }
-
-    .hero-category {
-      white-space: nowrap;
-      font-size: clamp(.46rem, .72vw, .72rem);
-      letter-spacing: clamp(.02em, .08vw, .12em);
-      max-width: 100%;
     }
 
     .hero-subtitle {
@@ -231,17 +240,20 @@
       padding-bottom: 3px;
     }
 
+    /* FOTO Y FRASE */
+
     .hero-visual {
       position: relative;
-      min-height: 560px;
+      min-height: 620px;
       display: grid;
-      place-items: center;
+      place-items: start center;
+      padding-top: 12px;
     }
 
     .photo-frame {
       position: relative;
-      width: 82%;
-      max-width: 410px;
+      width: 86%;
+      max-width: 440px;
       aspect-ratio: 4 / 5;
       background: var(--rose-light);
       border-radius: 48% 48% 5px 5px;
@@ -270,21 +282,22 @@
       color: var(--plum);
     }
 
-    /* Frase de Maya Angelou */
+    /* Rectángulo de la frase: más ancho, recto y ordenado */
+
     .photo-note {
       position: absolute;
-      right: -8px;
-      bottom: 105px;
-      width: min(340px, 88%);
-      padding: 20px 26px;
+      right: -10px;
+      bottom: 72px;
+      width: min(430px, 96%);
+      padding: 23px 30px 21px;
       background: var(--paper);
       border: 1px solid var(--line);
-      box-shadow: 0 12px 40px rgba(48, 42, 44, .06);
+      box-shadow: 0 16px 42px rgba(48,42,44,.08);
       font-family: var(--serif);
-      font-size: 1rem;
+      font-size: clamp(.98rem, 1.1vw, 1.08rem);
       font-style: italic;
-      line-height: 1.5;
-      transform: rotate(2deg);
+      line-height: 1.55;
+      transform: rotate(0deg);
       z-index: 2;
     }
 
@@ -294,22 +307,23 @@
 
     .quote-author {
       display: block;
-      margin-top: 8px;
+      margin-top: 10px;
       font-size: .88em;
       font-style: normal;
+      text-align: left;
     }
 
     .hero-star {
       position: absolute;
-      top: 45px;
-      left: 5%;
+      top: 18px;
+      left: 2%;
       color: var(--rose);
       font-size: 2.5rem;
     }
 
     .hero-number {
       position: absolute;
-      top: 100px;
+      top: 75px;
       right: 0;
       color: var(--muted);
       font-size: .7rem;
@@ -317,7 +331,8 @@
       writing-mode: vertical-rl;
     }
 
-    /* Franja de áreas */
+    /* FRANJA DE ÁREAS */
+
     .intro-strip {
       background: var(--rose-light);
       padding: 25px 0;
@@ -341,7 +356,8 @@
       color: var(--rose);
     }
 
-    /* Perfil */
+    /* PERFIL */
+
     .about-grid {
       display: grid;
       grid-template-columns: .8fr 1.2fr;
@@ -386,7 +402,8 @@
       font-size: .78rem;
     }
 
-    /* Proyectos */
+    /* PROYECTOS */
+
     .projects {
       background: var(--paper);
     }
@@ -441,7 +458,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      box-shadow: 12px 14px 0 rgba(91, 82, 80, .12);
+      box-shadow: 12px 14px 0 rgba(91,82,80,.12);
       transform: rotate(-3deg);
     }
 
@@ -531,7 +548,8 @@
       color: var(--muted);
     }
 
-    /* Servicios */
+    /* SERVICIOS */
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -570,7 +588,8 @@
       max-width: 390px;
     }
 
-    /* Herramientas */
+    /* HERRAMIENTAS */
+
     .tools {
       background: var(--rose-light);
     }
@@ -604,14 +623,15 @@
 
     .tool {
       padding: 12px 19px;
-      border: 1px solid rgba(121, 91, 104, .3);
+      border: 1px solid rgba(121,91,104,.3);
       border-radius: 99px;
       color: var(--plum);
       font-size: .82rem;
-      background: rgba(255, 253, 251, .35);
+      background: rgba(255,253,251,.35);
     }
 
-    /* Contacto */
+    /* CONTACTO */
+
     .contact {
       text-align: center;
       padding: 120px 0;
@@ -664,7 +684,8 @@
       flex-wrap: wrap;
     }
 
-    /* Adaptación a pantallas medianas */
+    /* ADAPTACIÓN A TABLET Y MÓVIL */
+
     @media (max-width: 800px) {
       .container {
         width: min(100% - 40px, 600px);
@@ -694,12 +715,13 @@
       }
 
       .hero-visual {
-        min-height: 500px;
+        min-height: 550px;
+        padding-top: 0;
       }
 
       .photo-frame {
-        width: 78%;
-        max-width: 350px;
+        width: 80%;
+        max-width: 370px;
       }
 
       .hero-star {
@@ -737,19 +759,19 @@
       }
     }
 
-    /* Adaptación a celulares */
     @media (max-width: 520px) {
       .hero h1 {
         font-size: clamp(3.3rem, 15vw, 5rem);
       }
 
       .hero-category {
-        font-size: clamp(.43rem, 2.15vw, .58rem);
-        letter-spacing: .015em;
+        font-size: clamp(.48rem, 2.45vw, .66rem);
+        letter-spacing: .025em;
       }
 
       .hero-visual {
-        min-height: 440px;
+        min-height: 465px;
+        padding-top: 0;
       }
 
       .photo-frame {
@@ -758,10 +780,10 @@
       }
 
       .photo-note {
-        right: -2px;
-        bottom: 38px;
-        width: min(300px, 88%);
-        padding: 16px 19px;
+        right: 0;
+        bottom: 25px;
+        width: min(330px, 94%);
+        padding: 17px 20px;
         font-size: .9rem;
       }
 
@@ -815,7 +837,6 @@
 </head>
 
 <body>
-  <!-- NAVEGACIÓN -->
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#inicio">maría paula<span>.</span></a>
@@ -831,6 +852,7 @@
 
   <main>
     <!-- PORTADA -->
+
     <section class="hero" id="inicio">
       <div class="container hero-grid">
 
@@ -841,7 +863,11 @@
             Marketing - Redes Sociales - Comunicaciones - Eventos
           </p>
 
-          <h1>Hola,<br>soy María Paula<br><em>Barinas.</em></h1>
+          <h1>
+            Hola,<br>
+            soy María Paula<br>
+            <em>Barinas.</em>
+          </h1>
 
           <p class="hero-subtitle">
             Estrategia de contenidos · Identidad de marca · Gestión de proyectos
@@ -854,7 +880,10 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button" href="#proyectos">Ver mis proyectos <span>↘</span></a>
+            <a class="button" href="#proyectos">
+              Ver mis proyectos <span>↘</span>
+            </a>
+
             <a class="text-link" href="#sobre-mi">Sobre mí</a>
           </div>
         </div>
@@ -863,26 +892,33 @@
           <span class="hero-star" aria-hidden="true">✳</span>
           <span class="hero-number">COMUNICAR ES CREAR · 01</span>
 
-          <!-- Aquí incorporaremos tu fotografía -->
+          <!-- AQUÍ INCORPORAREMOS TU FOTOGRAFÍA -->
+
           <div class="photo-frame">
             <div class="photo-placeholder">
               <div class="monogram">MP</div>
-              <p>Tu foto favorita irá aquí.<br>Este espacio es para ti.</p>
+              <p>
+                Tu foto favorita irá aquí.<br>
+                Este espacio es para ti.
+              </p>
             </div>
           </div>
+
+          <!-- FRASE DE MAYA ANGELOU -->
 
           <div class="photo-note">
             <div class="quote-text">
               “No puedes agotar la creatividad. Cuanto más la usas, más tienes”.
             </div>
+
             <span class="quote-author">— Maya Angelou</span>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- ÁREAS -->
+
     <div class="intro-strip">
       <div class="container strip-content">
         <span>Contenido</span>
@@ -896,12 +932,15 @@
     </div>
 
     <!-- PERFIL -->
+
     <section class="section" id="sobre-mi">
       <div class="container about-grid">
 
         <div>
           <p class="eyebrow">Mi perfil</p>
-          <h2 class="about-statement">Una mirada creativa a la comunicación</h2>
+          <h2 class="about-statement">
+            Una mirada creativa a la comunicación
+          </h2>
         </div>
 
         <div class="about-copy">
@@ -948,17 +987,22 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- PROYECTOS -->
+
     <section class="section projects" id="proyectos">
       <div class="container">
 
         <div class="section-heading">
           <p class="eyebrow">Proyectos</p>
-          <h2>Ideas que toman<br><em>forma.</em></h2>
+
+          <h2>
+            Ideas que toman<br>
+            <em>forma.</em>
+          </h2>
+
           <p>
             Proyectos que combinan comunicación, creatividad y organización,
             con enfoques distintos según las necesidades de cada marca.
@@ -970,6 +1014,7 @@
           <article class="project-card">
             <div class="project-art sublime-art">
               <span class="art-label">Proyecto 01 · Beauty</span>
+
               <div class="sublime-composition">
                 <span>SUBLIME</span>
                 <small>STUDIO</small>
@@ -977,13 +1022,21 @@
             </div>
 
             <div class="project-info">
-              <span class="project-meta">Social media · Contenido · Dirección visual</span>
+              <span class="project-meta">
+                Social media · Contenido · Dirección visual
+              </span>
+
               <h3>Sublime Studio</h3>
+
               <p>
                 Una propuesta visual y de contenido para una marca de belleza,
                 con una mirada fresca, coherente y cuidada.
               </p>
-              <a class="project-link" href="mailto:maria.barinasforero@gmail.com?subject=Portafolio%20-%20Sublime%20Studio">
+
+              <a
+                class="project-link"
+                href="mailto:maria.barinasforero@gmail.com?subject=Portafolio%20-%20Sublime%20Studio"
+              >
                 Consultar proyecto ↗
               </a>
             </div>
@@ -992,24 +1045,32 @@
           <article class="project-card">
             <div class="project-art mimo-art">
               <span class="art-label">Proyecto 02 · Lifestyle</span>
+
               <div class="mimo-composition">
                 <span>mimo</span>
               </div>
             </div>
 
             <div class="project-info">
-              <span class="project-meta">Social media · Estrategia de contenido</span>
+              <span class="project-meta">
+                Social media · Estrategia de contenido
+              </span>
+
               <h3>Mimo Kits</h3>
+
               <p>
                 Desarrollo de ideas y propuestas gráficas para comunicar
                 productos de cuidado personal de una forma cercana y atractiva.
               </p>
-              <a class="project-link" href="mailto:maria.barinasforero@gmail.com?subject=Portafolio%20-%20Mimo%20Kits">
+
+              <a
+                class="project-link"
+                href="mailto:maria.barinasforero@gmail.com?subject=Portafolio%20-%20Mimo%20Kits"
+              >
                 Consultar proyecto ↗
               </a>
             </div>
           </article>
-
         </div>
 
         <p class="project-note">
@@ -1020,12 +1081,18 @@
     </section>
 
     <!-- SERVICIOS -->
+
     <section class="section" id="servicios">
       <div class="container">
 
         <div class="section-heading">
           <p class="eyebrow">Lo que me mueve</p>
-          <h2>Creatividad en<br><em>acción.</em></h2>
+
+          <h2>
+            Creatividad en<br>
+            <em>acción.</em>
+          </h2>
+
           <p>
             Diferentes formas de convertir ideas en comunicación,
             contenido y experiencias con sentido.
@@ -1033,9 +1100,11 @@
         </div>
 
         <div class="services-grid">
+
           <article class="service">
             <span class="service-number">01 / SOCIAL MEDIA</span>
             <h3>Estrategia para redes</h3>
+
             <p>
               Planificación de contenido, conceptos creativos y comunicación
               pensada para cada marca y su comunidad.
@@ -1045,6 +1114,7 @@
           <article class="service">
             <span class="service-number">02 / CONTENT</span>
             <h3>Creación de contenido</h3>
+
             <p>
               Ideas, storytelling y piezas visuales que comunican
               mensajes de manera clara y atractiva.
@@ -1054,6 +1124,7 @@
           <article class="service">
             <span class="service-number">03 / COMMUNICATION</span>
             <h3>Comunicación de marca</h3>
+
             <p>
               Mensajes, contenidos y acciones alineados con la identidad
               y los objetivos de comunicación.
@@ -1063,23 +1134,30 @@
           <article class="service">
             <span class="service-number">04 / EVENTS</span>
             <h3>Eventos y experiencias</h3>
+
             <p>
               Organización, coordinación y atención a los detalles
               para crear experiencias significativas.
             </p>
           </article>
-        </div>
 
+        </div>
       </div>
     </section>
 
     <!-- HERRAMIENTAS -->
+
     <section class="section tools">
       <div class="container tools-inner">
 
         <div>
           <p class="eyebrow">Mi caja de herramientas</p>
-          <h2>Ideas +<br>herramientas.</h2>
+
+          <h2>
+            Ideas +<br>
+            herramientas.
+          </h2>
+
           <p class="tools-copy">
             Algunas de las herramientas que acompañan mis procesos
             de creación y desarrollo de contenido.
@@ -1100,11 +1178,16 @@
     </section>
 
     <!-- CONTACTO -->
+
     <section class="contact" id="contacto">
       <div class="container">
 
         <p class="eyebrow">¿Creamos algo juntas?</p>
-        <h2>Las buenas ideas<br>empiezan con una <em>conversación.</em></h2>
+
+        <h2>
+          Las buenas ideas<br>
+          empiezan con una <em>conversación.</em>
+        </h2>
 
         <p>
           Estoy abierta a nuevas oportunidades, proyectos creativos
@@ -1136,6 +1219,8 @@
       </div>
     </section>
   </main>
+
+  <!-- PIE DE PÁGINA -->
 
   <footer>
     <div class="container footer-inner">
