@@ -1,14 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="Portafolio de María Paula: marketing digital, social media, comunicación y experiencias de marca.">
-
   <title>María Paula | Marketing & Social Media</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
@@ -27,16 +23,9 @@
       --sans: "DM Sans", Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 90px;
-    }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
     body {
       background: var(--cream);
@@ -46,32 +35,21 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
-    .container {
-      width: min(1120px, 88%);
-      margin: 0 auto;
-    }
+    .container { width: min(1120px, 88%); margin: 0 auto; }
 
     .eyebrow {
-      font-size: 0.72rem;
+      font-size: .72rem;
       font-weight: 600;
-      letter-spacing: 0.18em;
+      letter-spacing: .18em;
       text-transform: uppercase;
       color: var(--plum);
     }
 
-    .section {
-      padding: 110px 0;
-    }
+    .section { padding: 110px 0; }
 
-    .section-heading {
-      max-width: 650px;
-      margin-bottom: 48px;
-    }
+    .section-heading { max-width: 650px; margin-bottom: 48px; }
 
     .section-heading h2 {
       font-family: var(--serif);
@@ -81,21 +59,16 @@
       margin-top: 12px;
     }
 
-    .section-heading p {
-      color: var(--muted);
-      margin-top: 18px;
-      max-width: 520px;
-    }
+    .section-heading p { color: var(--muted); margin-top: 18px; max-width: 520px; }
 
-    /* Navigation */
-
+    /* Navegación */
     .nav {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(250, 248, 245, 0.94);
+      background: rgba(250,248,245,.94);
       backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(233, 225, 221, 0.8);
+      border-bottom: 1px solid rgba(233,225,221,.8);
     }
 
     .nav-inner {
@@ -110,24 +83,20 @@
       font-family: var(--serif);
       font-size: 1.45rem;
       font-weight: 600;
-      letter-spacing: -0.04em;
+      letter-spacing: -.04em;
     }
 
-    .brand span {
-      color: var(--plum);
-    }
+    .brand span { color: var(--plum); }
 
     .nav-links {
       display: flex;
       align-items: center;
       gap: 30px;
-      font-size: 0.82rem;
+      font-size: .82rem;
       color: #5e5658;
     }
 
-    .nav-links a:hover {
-      color: var(--plum);
-    }
+    .nav-links a:hover { color: var(--plum); }
 
     .nav-contact {
       border: 1px solid var(--ink);
@@ -135,30 +104,24 @@
       padding: 9px 18px;
     }
 
-    /* Hero */
-
-    .hero {
-      padding: 76px 0 100px;
-      overflow: hidden;
-    }
+    /* Portada */
+    .hero { padding: 76px 0 100px; overflow: hidden; }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.05fr .95fr;
       align-items: center;
       gap: 64px;
     }
 
-    .hero-copy {
-      padding: 25px 0;
-    }
+    .hero-copy { padding: 25px 0; }
 
     .availability {
       display: inline-flex;
       align-items: center;
       gap: 9px;
       color: var(--muted);
-      font-size: 0.78rem;
+      font-size: .78rem;
       margin-bottom: 30px;
     }
 
@@ -174,19 +137,16 @@
       font-family: var(--serif);
       font-weight: 500;
       font-size: clamp(3.6rem, 7vw, 6.5rem);
-      line-height: 0.99;
-      letter-spacing: -0.055em;
+      line-height: .99;
+      letter-spacing: -.055em;
     }
 
-    .hero h1 em {
-      color: var(--plum);
-      font-weight: 500;
-    }
+    .hero h1 em { color: var(--plum); font-weight: 500; }
 
     .hero-subtitle {
       margin-top: 27px;
-      font-size: 0.85rem;
-      letter-spacing: 0.06em;
+      font-size: .85rem;
+      letter-spacing: .06em;
       color: var(--muted);
     }
 
@@ -214,17 +174,14 @@
       border-radius: 99px;
       background: var(--ink);
       color: white;
-      font-size: 0.82rem;
-      transition: transform 0.2s, background 0.2s;
+      font-size: .82rem;
+      transition: transform .2s, background .2s;
     }
 
-    .button:hover {
-      transform: translateY(-2px);
-      background: var(--plum);
-    }
+    .button:hover { transform: translateY(-2px); background: var(--plum); }
 
     .text-link {
-      font-size: 0.83rem;
+      font-size: .83rem;
       border-bottom: 1px solid var(--rose);
       padding-bottom: 3px;
     }
@@ -251,9 +208,7 @@
       padding: 30px;
     }
 
-    .photo-placeholder {
-      max-width: 230px;
-    }
+    .photo-placeholder { max-width: 230px; }
 
     .photo-placeholder .monogram {
       font-family: var(--serif);
@@ -264,7 +219,7 @@
 
     .photo-placeholder p {
       margin-top: 12px;
-      font-size: 0.78rem;
+      font-size: .78rem;
       color: var(--plum);
     }
 
@@ -276,12 +231,18 @@
       padding: 17px 20px;
       background: var(--paper);
       border: 1px solid var(--line);
-      box-shadow: 0 12px 40px rgba(48, 42, 44, 0.06);
+      box-shadow: 0 12px 40px rgba(48,42,44,.06);
       font-family: var(--serif);
       font-size: 1.1rem;
       font-style: italic;
       line-height: 1.4;
       transform: rotate(3deg);
+    }
+
+    .quote-author {
+      display: block;
+      margin-top: 8px;
+      font-style: normal;
     }
 
     .hero-star {
@@ -297,18 +258,13 @@
       top: 100px;
       right: 0;
       color: var(--muted);
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
+      font-size: .7rem;
+      letter-spacing: .12em;
       writing-mode: vertical-rl;
     }
 
-    /* Intro strip */
-
-    .intro-strip {
-      background: var(--rose-light);
-      padding: 25px 0;
-      overflow: hidden;
-    }
+    /* Franja de áreas */
+    .intro-strip { background: var(--rose-light); padding: 25px 0; overflow: hidden; }
 
     .strip-content {
       display: flex;
@@ -317,21 +273,17 @@
       gap: 22px;
       align-items: center;
       color: var(--plum);
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
+      font-size: .72rem;
+      letter-spacing: .16em;
       text-transform: uppercase;
     }
 
-    .strip-dot {
-      font-size: 1rem;
-      color: var(--rose);
-    }
+    .strip-dot { font-size: 1rem; color: var(--rose); }
 
-    /* About */
-
+    /* Perfil */
     .about-grid {
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns: .8fr 1.2fr;
       gap: 100px;
       align-items: start;
     }
@@ -340,17 +292,12 @@
       font-family: var(--serif);
       font-size: clamp(2.2rem, 4vw, 3.5rem);
       line-height: 1.2;
-      letter-spacing: -0.035em;
+      letter-spacing: -.035em;
     }
 
-    .about-statement em {
-      color: var(--plum);
-    }
+    .about-statement em { color: var(--plum); }
 
-    .about-copy p {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
+    .about-copy p { color: var(--muted); margin-bottom: 20px; }
 
     .about-facts {
       display: grid;
@@ -368,16 +315,10 @@
       font-weight: 500;
     }
 
-    .fact span {
-      color: var(--muted);
-      font-size: 0.78rem;
-    }
+    .fact span { color: var(--muted); font-size: .78rem; }
 
-    /* Projects */
-
-    .projects {
-      background: var(--paper);
-    }
+    /* Proyectos */
+    .projects { background: var(--paper); }
 
     .project-grid {
       display: grid;
@@ -385,9 +326,7 @@
       gap: 28px;
     }
 
-    .project-card {
-      min-width: 0;
-    }
+    .project-card { min-width: 0; }
 
     .project-art {
       position: relative;
@@ -397,27 +336,20 @@
       align-items: center;
       justify-content: center;
       padding: 30px;
-      transition: transform 0.3s;
+      transition: transform .3s;
     }
 
-    .project-card:hover .project-art {
-      transform: translateY(-4px);
-    }
+    .project-card:hover .project-art { transform: translateY(-4px); }
 
-    .sublime-art {
-      background: #e8e5e2;
-    }
-
-    .mimo-art {
-      background: #f1e2d9;
-    }
+    .sublime-art { background: #e8e5e2; }
+    .mimo-art { background: #f1e2d9; }
 
     .art-label {
       position: absolute;
       top: 22px;
       left: 24px;
-      font-size: 0.65rem;
-      letter-spacing: 0.16em;
+      font-size: .65rem;
+      letter-spacing: .16em;
       text-transform: uppercase;
     }
 
@@ -429,7 +361,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      box-shadow: 12px 14px 0 rgba(91, 82, 80, 0.12);
+      box-shadow: 12px 14px 0 rgba(91,82,80,.12);
       transform: rotate(-3deg);
     }
 
@@ -437,12 +369,12 @@
       font-family: var(--serif);
       font-size: clamp(2.2rem, 5vw, 4rem);
       color: #6f6968;
-      letter-spacing: 0.08em;
+      letter-spacing: .08em;
     }
 
     .sublime-composition small {
-      font-size: 0.58rem;
-      letter-spacing: 0.28em;
+      font-size: .58rem;
+      letter-spacing: .28em;
       color: #8e8584;
     }
 
@@ -464,13 +396,8 @@
       border-radius: 50%;
     }
 
-    .mimo-composition::before {
-      inset: 13px;
-    }
-
-    .mimo-composition::after {
-      inset: 25px;
-    }
+    .mimo-composition::before { inset: 13px; }
+    .mimo-composition::after { inset: 25px; }
 
     .mimo-composition span {
       z-index: 1;
@@ -480,14 +407,12 @@
       font-style: italic;
     }
 
-    .project-info {
-      padding: 23px 2px 15px;
-    }
+    .project-info { padding: 23px 2px 15px; }
 
     .project-meta {
       color: var(--plum);
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
+      font-size: .68rem;
+      letter-spacing: .12em;
       text-transform: uppercase;
     }
 
@@ -500,7 +425,7 @@
 
     .project-info p {
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: .88rem;
       margin-top: 8px;
       max-width: 450px;
     }
@@ -508,42 +433,26 @@
     .project-link {
       display: inline-block;
       margin-top: 17px;
-      font-size: 0.8rem;
+      font-size: .8rem;
       border-bottom: 1px solid var(--rose);
       padding-bottom: 3px;
     }
 
-    .project-note {
-      margin-top: 35px;
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
+    .project-note { margin-top: 35px; font-size: .78rem; color: var(--muted); }
 
-    /* Services */
-
+    /* Servicios */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       border-top: 1px solid var(--line);
     }
 
-    .service {
-      padding: 30px 25px 30px 0;
-      border-bottom: 1px solid var(--line);
-    }
+    .service { padding: 30px 25px 30px 0; border-bottom: 1px solid var(--line); }
 
-    .service:nth-child(odd) {
-      border-right: 1px solid var(--line);
-    }
+    .service:nth-child(odd) { border-right: 1px solid var(--line); }
+    .service:nth-child(even) { padding-left: 30px; }
 
-    .service:nth-child(even) {
-      padding-left: 30px;
-    }
-
-    .service-number {
-      font-size: 0.72rem;
-      color: var(--plum);
-    }
+    .service-number { font-size: .72rem; color: var(--plum); }
 
     .service h3 {
       font-family: var(--serif);
@@ -554,20 +463,17 @@
 
     .service p {
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: .88rem;
       margin-top: 8px;
       max-width: 390px;
     }
 
-    /* Tools */
-
-    .tools {
-      background: var(--rose-light);
-    }
+    /* Herramientas */
+    .tools { background: var(--rose-light); }
 
     .tools-inner {
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns: .8fr 1.2fr;
       gap: 70px;
       align-items: center;
     }
@@ -580,46 +486,32 @@
       margin-top: 12px;
     }
 
-    .tools-copy {
-      color: #76656a;
-      margin-top: 18px;
-      font-size: 0.9rem;
-    }
+    .tools-copy { color: #76656a; margin-top: 18px; font-size: .9rem; }
 
-    .tool-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+    .tool-list { display: flex; flex-wrap: wrap; gap: 12px; }
 
     .tool {
       padding: 12px 19px;
-      border: 1px solid rgba(121, 91, 104, 0.3);
+      border: 1px solid rgba(121,91,104,.3);
       border-radius: 99px;
       color: var(--plum);
-      font-size: 0.82rem;
-      background: rgba(255, 253, 251, 0.35);
+      font-size: .82rem;
+      background: rgba(255,253,251,.35);
     }
 
-    /* Contact */
-
-    .contact {
-      text-align: center;
-      padding: 120px 0;
-    }
+    /* Contacto */
+    .contact { text-align: center; padding: 120px 0; }
 
     .contact h2 {
       font-family: var(--serif);
       font-size: clamp(3rem, 7vw, 6rem);
       font-weight: 500;
       line-height: 1.08;
-      letter-spacing: -0.045em;
+      letter-spacing: -.045em;
       margin-top: 18px;
     }
 
-    .contact h2 em {
-      color: var(--plum);
-    }
+    .contact h2 em { color: var(--plum); }
 
     .contact p {
       color: var(--muted);
@@ -633,19 +525,16 @@
       flex-wrap: wrap;
       gap: 24px;
       margin-top: 30px;
-      font-size: 0.82rem;
+      font-size: .82rem;
     }
 
-    .contact-links a {
-      border-bottom: 1px solid var(--rose);
-      padding-bottom: 3px;
-    }
+    .contact-links a { border-bottom: 1px solid var(--rose); padding-bottom: 3px; }
 
     footer {
       border-top: 1px solid var(--line);
       padding: 24px 0;
       color: var(--muted);
-      font-size: 0.72rem;
+      font-size: .72rem;
     }
 
     .footer-inner {
@@ -655,151 +544,53 @@
       flex-wrap: wrap;
     }
 
-    /* Responsive */
-
+    /* Adaptación a pantallas pequeñas */
     @media (max-width: 800px) {
-      .container {
-        width: min(100% - 40px, 600px);
-      }
-
-      .nav-inner {
-        min-height: 70px;
-      }
-
-      .nav-links {
-        gap: 14px;
-      }
-
-      .nav-links a:not(.nav-contact) {
-        display: none;
-      }
-
-      .hero {
-        padding: 55px 0 70px;
-      }
-
-      .hero-grid,
-      .about-grid,
-      .tools-inner {
-        grid-template-columns: 1fr;
-        gap: 38px;
-      }
-
-      .hero-visual {
-        min-height: 420px;
-      }
-
-      .photo-frame {
-        width: 78%;
-        max-width: 350px;
-      }
-
-      .hero-star {
-        left: 4%;
-        top: 20px;
-      }
-
-      .hero-number {
-        top: 55px;
-      }
-
-      .section {
-        padding: 78px 0;
-      }
-
-      .about-grid {
-        gap: 30px;
-      }
-
-      .project-grid {
-        gap: 18px;
-      }
-
-      .project-art {
-        min-height: 260px;
-        padding: 20px;
-      }
-
-      .tools-inner {
-        gap: 30px;
-      }
-
-      .contact {
-        padding: 90px 0;
-      }
+      .container { width: min(100% - 40px, 600px); }
+      .nav-inner { min-height: 70px; }
+      .nav-links { gap: 14px; }
+      .nav-links a:not(.nav-contact) { display: none; }
+      .hero { padding: 55px 0 70px; }
+      .hero-grid, .about-grid, .tools-inner { grid-template-columns: 1fr; gap: 38px; }
+      .hero-visual { min-height: 420px; }
+      .photo-frame { width: 78%; max-width: 350px; }
+      .hero-star { left: 4%; top: 20px; }
+      .hero-number { top: 55px; }
+      .section { padding: 78px 0; }
+      .about-grid { gap: 30px; }
+      .project-grid { gap: 18px; }
+      .project-art { min-height: 260px; padding: 20px; }
+      .tools-inner { gap: 30px; }
+      .contact { padding: 90px 0; }
     }
 
     @media (max-width: 520px) {
-      .hero h1 {
-        font-size: clamp(3.3rem, 15vw, 5rem);
-      }
-
-      .hero-visual {
-        min-height: 350px;
-      }
-
-      .photo-note {
-        right: -5px;
-        bottom: 30px;
-        max-width: 140px;
-        font-size: 0.95rem;
-      }
-
-      .strip-content {
-        gap: 10px;
-        font-size: 0.58rem;
-        letter-spacing: 0.1em;
-      }
-
-      .project-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .project-art {
-        min-height: 320px;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .service,
-      .service:nth-child(even),
-      .service:nth-child(odd) {
+      .hero h1 { font-size: clamp(3.3rem, 15vw, 5rem); }
+      .hero-visual { min-height: 350px; }
+      .photo-note { right: -5px; bottom: 30px; max-width: 140px; font-size: .95rem; }
+      .strip-content { gap: 10px; font-size: .58rem; letter-spacing: .1em; }
+      .project-grid { grid-template-columns: 1fr; gap: 30px; }
+      .project-art { min-height: 320px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service, .service:nth-child(even), .service:nth-child(odd) {
         border-right: 0;
         padding: 25px 0;
       }
-
-      .about-facts {
-        gap: 15px;
-      }
-
-      .contact-links {
-        gap: 18px;
-      }
+      .about-facts { gap: 15px; }
+      .contact-links { gap: 18px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        transition: none !important;
-      }
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
     }
   </style>
 </head>
 
 <body>
-
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#inicio">maría paula<span>.</span></a>
-
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#proyectos">Proyectos</a>
@@ -810,37 +601,33 @@
   </header>
 
   <main>
-
     <!-- PORTADA -->
     <section class="hero" id="inicio">
       <div class="container hero-grid">
-
         <div class="hero-copy">
-          <div class="availability">Portafolio creativo · 2026</div>
-
-          <p class="eyebrow">Marketing · Social Media · Comunicación</p>
-
-          <h1>Hola,<br>soy María<br><em>Paula.</em></h1>
+          <div class="availability">Portafolio creativo</div>
+          <p class="eyebrow">Marketing - Redes Sociales - Comunicaciones - Eventos</p>
+          <h1>Hola,<br>soy María Paula<br><em>Barinas.</em></h1>
 
           <p class="hero-subtitle">
-            ESTRATEGIA CON INTENCIÓN. CREATIVIDAD CON PROPÓSITO.
+            Estrategia de contenidos · Identidad de marca · Gestión de proyectos
           </p>
 
           <p class="hero-description">
-            Creo ideas, contenido y experiencias que conectan marcas
-            con personas. Me gusta encontrar el punto donde la estrategia
-            se encuentra con la creatividad.
+            Mi trabajo combina comunicación, redes sociales y creatividad.
+            Me enfoco en desarrollar ideas, organizar proyectos y buscar formas
+            de comunicar que tengan sentido para cada marca.
           </p>
 
           <div class="hero-actions">
             <a class="button" href="#proyectos">Ver mis proyectos <span>↘</span></a>
-            <a class="text-link" href="#sobre-mi">Conóceme un poco más</a>
+            <a class="text-link" href="#sobre-mi">Sobre mí</a>
           </div>
         </div>
 
         <div class="hero-visual">
           <span class="hero-star" aria-hidden="true">✳</span>
-          <span class="hero-number">UN POCO DE MÍ · 01</span>
+          <span class="hero-number">COMUNICAR ES CREAR · 01</span>
 
           <!-- Aquí incorporaremos tu fotografía -->
           <div class="photo-frame">
@@ -850,100 +637,94 @@
             </div>
           </div>
 
-          <div class="photo-note">Ideas bonitas,<br>con intención.</div>
+          <div class="photo-note">
+            “No puedes agotar la creatividad. Cuanto más la usas, más tienes”.
+            <span class="quote-author">— Maya Angelou</span>
+          </div>
         </div>
-
       </div>
     </section>
 
     <!-- ÁREAS -->
     <div class="intro-strip">
       <div class="container strip-content">
-        <span>Marketing digital</span>
-        <span class="strip-dot">✳</span>
-        <span>Social media</span>
-        <span class="strip-dot">✳</span>
-        <span>Contenido</span>
-        <span class="strip-dot">✳</span>
+        <span>Contenido</span><span class="strip-dot">✳</span>
+        <span>Marcas</span><span class="strip-dot">✳</span>
+        <span>Creatividad</span><span class="strip-dot">✳</span>
         <span>Experiencias</span>
       </div>
     </div>
 
-    <!-- SOBRE MÍ -->
+    <!-- PERFIL -->
     <section class="section" id="sobre-mi">
       <div class="container about-grid">
-
         <div>
-          <p class="eyebrow">Un poco sobre mí</p>
-          <h2 class="about-statement">
-            No soy solamente <em>comunicadora.</em>
-          </h2>
+          <p class="eyebrow">Mi perfil</p>
+          <h2 class="about-statement">Una mirada creativa a la comunicación</h2>
         </div>
 
         <div class="about-copy">
           <p>
-            Soy María Paula, profesional en Comunicación Social con interés
-            en el marketing digital, la creación de contenido y el desarrollo
-            de experiencias de marca.
+            Soy profesional en Comunicación Social, con énfasis en Comunicación
+            Organizacional y Publicidad. Me interesan el marketing digital, las
+            redes sociales, la creación de contenido y todo lo que hay detrás
+            de una buena idea.
           </p>
 
           <p>
-            Me gusta conectar ideas con personas. Por eso, mi trabajo se mueve
-            entre la estrategia y la creatividad: desde pensar cómo una marca
-            se comunica en redes hasta imaginar experiencias que generen
-            conexiones memorables.
+            Me gusta trabajar en proyectos donde pueda combinar la creatividad
+            con la organización, proponer ideas y encontrar formas de comunicar
+            que tengan sentido para cada marca. Los eventos y las experiencias
+            son una de mis grandes pasiones, porque permiten que las marcas se
+            comuniquen con las personas de una forma que va más allá de las redes sociales.
           </p>
 
           <p>
-            Este espacio reúne proyectos, ideas y procesos que reflejan
-            mi manera de entender la comunicación: con intención, sensibilidad
-            visual y atención a los detalles.
+            Quiero seguir creciendo en estas áreas, aportar ideas y participar
+            en proyectos donde pueda poner en práctica mis conocimientos,
+            aprender cosas nuevas y desarrollar mi creatividad.
           </p>
 
           <div class="about-facts">
             <div class="fact">
               <strong>Comunicación</strong>
-              <span>Mi punto de partida</span>
+              <span>La base de mi formación</span>
             </div>
             <div class="fact">
               <strong>Marketing digital</strong>
-              <span>Mi campo creativo</span>
+              <span>Estrategia y creatividad</span>
             </div>
             <div class="fact">
               <strong>Contenido</strong>
-              <span>Ideas que conectan</span>
+              <span>Ideas que toman forma</span>
             </div>
             <div class="fact">
-              <strong>Experiencias</strong>
-              <span>Marcas que se sienten</span>
+              <strong>Eventos y experiencias</strong>
+              <span>De las ideas a la acción</span>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- PROYECTOS -->
     <section class="section projects" id="proyectos">
       <div class="container">
-
         <div class="section-heading">
-          <p class="eyebrow">Una selección de mi trabajo</p>
+          <p class="eyebrow">Proyectos</p>
           <h2>Ideas que toman<br><em>forma.</em></h2>
           <p>
-            Proyectos de contenido y comunicación en los que las ideas,
-            la identidad visual y la conexión con las personas son protagonistas.
+            Proyectos que combinan comunicación, creatividad y organización,
+            con enfoques distintos según las necesidades de cada marca.
           </p>
         </div>
 
         <div class="project-grid">
-
           <article class="project-card">
             <div class="project-art sublime-art">
               <span class="art-label">Proyecto 01 · Beauty</span>
               <div class="sublime-composition">
-                <span>SUBLIME</span>
-                <small>STUDIO</small>
+                <span>SUBLIME</span><small>STUDIO</small>
               </div>
             </div>
 
@@ -963,9 +744,7 @@
           <article class="project-card">
             <div class="project-art mimo-art">
               <span class="art-label">Proyecto 02 · Lifestyle</span>
-              <div class="mimo-composition">
-                <span>mimo</span>
-              </div>
+              <div class="mimo-composition"><span>mimo</span></div>
             </div>
 
             <div class="project-info">
@@ -980,21 +759,18 @@
               </a>
             </div>
           </article>
-
         </div>
 
         <p class="project-note">
           Este portafolio está en construcción. Pronto encontrarás aquí
           más detalles, piezas visuales y procesos de cada proyecto.
         </p>
-
       </div>
     </section>
 
     <!-- SERVICIOS -->
     <section class="section" id="servicios">
       <div class="container">
-
         <div class="section-heading">
           <p class="eyebrow">Lo que me mueve</p>
           <h2>Creatividad en<br><em>acción.</em></h2>
@@ -1005,7 +781,6 @@
         </div>
 
         <div class="services-grid">
-
           <article class="service">
             <span class="service-number">01 / SOCIAL MEDIA</span>
             <h3>Estrategia para redes</h3>
@@ -1041,7 +816,6 @@
               para crear experiencias significativas.
             </p>
           </article>
-
         </div>
       </div>
     </section>
@@ -1049,7 +823,6 @@
     <!-- HERRAMIENTAS -->
     <section class="section tools">
       <div class="container tools-inner">
-
         <div>
           <p class="eyebrow">Mi caja de herramientas</p>
           <h2>Ideas +<br>herramientas.</h2>
@@ -1068,7 +841,6 @@
           <span class="tool">Marketing digital</span>
           <span class="tool">Creación de contenido</span>
         </div>
-
       </div>
     </section>
 
@@ -1076,25 +848,26 @@
     <section class="contact" id="contacto">
       <div class="container">
         <p class="eyebrow">¿Creamos algo juntas?</p>
-
         <h2>Las buenas ideas<br>empiezan con una <em>conversación.</em></h2>
-
         <p>
           Estoy abierta a nuevas oportunidades, proyectos creativos
           y colaboraciones. Me encantará saber de ti.
         </p>
 
-        <a class="button" href="mailto:TU_CORREO@EJEMPLO.COM">
+        <a class="button" href="mailto:maria.barinasforero@gmail.com">
           Escríbeme <span>↗</span>
         </a>
 
         <div class="contact-links">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/maria-paula-barinas-forero-9a6156307/"
+   target="_blank"
+   rel="noopener noreferrer">
+  LinkedIn
+</a>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -1103,6 +876,5 @@
       <span>Hecho con intención y un poquito de creatividad ✳</span>
     </div>
   </footer>
-
 </body>
 </html>
